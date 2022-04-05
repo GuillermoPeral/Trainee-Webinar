@@ -1,0 +1,227 @@
+:root{
+    --fuentePrimaria: 'PT Sans', sans-serif;
+    --colorFooter: #27466c;
+    --colorBoton: #ea2d2c;
+    --colorPrimario: #f7cf12;
+    --colorBotonStore: #fec05a;
+    --blanco: #ffffff;
+    --colorBotonPrimarios: #00a7e1;
+    --colorTexto: #355376;
+}    
+html {
+box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+img{
+    width: 100%;
+}
+body{
+    background-color: var(--colorPrimario);
+    font-family: 'PT Sans', sans-serif;
+}
+.contenedor-logo{
+    display: flex;
+    justify-content: left;
+    height: 5rem;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+    color: var(--blanco);
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.titulo{
+    font-size: 4rem;
+    margin: .5rem 0;
+}
+.contenedor-formulario{
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+.parrafo-contenedor{
+    color: var(--colorTexto);
+    font-size: 1.3rem;
+}
+.boton-contenedor{
+    width: 15rem;
+    height: 3.5rem;
+    border-radius: 5rem;
+    border-style: none;
+    font-size: 1.2rem;
+    color: var(--blanco);
+    text-transform: capitalize;
+    background-color: var(--colorBotonPrimarios);
+    margin: 2rem 0;
+}
+.imagenes-contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    background-color: var(--blanco)
+    
+}
+.formulario{
+    background-color: var(--blanco);
+    border-radius: 1rem;
+    justify-content: center;
+    width: min(50rem, 100%);
+}
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    color: var(--colorBotonPrimarios);
+    padding-top: 4rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.formulario-span{
+    padding: 3rem 0;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: var(--colorTexto);
+}
+.campos-contenedor{
+    line-height: 5rem;
+    border-radius: 10px;
+}
+.input-text{
+    width: 100%;
+    border-color: gainsboro;
+    border-style: inset;
+    border-radius: 2rem;
+    height: 3rem;
+}
+.boton-enviar{
+    width:100%;
+    height: 3.5rem;
+    border-radius: 5rem;
+    border-style: none;
+    font-size: 1.2rem;
+    color: var(--blanco);
+    text-transform: capitalize;
+    background-color: var(--colorBotonPrimarios);
+    margin: 2rem 0;
+}
+.formulario-parrafo{
+    color: var(--colorTexto);
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
+.footer{
+    background-color: var(--colorFooter);
+    font-family: 'roboto', sans-serif;
+    object-fit: contain;
+    height: 32rem;
+}
+.footer-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 9rem;
+}
+.logo-footer{
+    object-fit: contain;
+    width: 12rem;
+    height: 5rem;
+}
+.footer-p{
+    color: var(--blanco);
+    line-height: 2;
+    grid-column: 1/2;
+}
+.div2-footer{
+    text-align: center;
+    color: var(--blanco);
+}
+.about{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    color: var(--blanco);
+}
+.about-upp{
+    font-size: 1.7rem;
+    color: var(--blanco);
+}
+.contenedor-contacto{
+    display: flex;
+    font-size: .8rem;
+    gap: 3rem;
+    text-transform: uppercase;
+    color: var(--blanco);
+    align-items: center;
+    grid-column: 2/3;
+}
+.store{
+    border-style: none;
+    background-color: var(--colorBotonStore);
+    height: 1.5rem;
+    width: 6rem;
+    border-radius: .3rem;
+}
+.give-now{
+    border-style: none;
+    background-color: var(--colorBoton);
+    color: var(--blanco);
+    height: 3rem;
+    width: 9rem;
+    border-radius: .5rem;
+}
+@media (max-width: 768px) {
+    .contenedor{
+        display: block;
+        text-align: center;
+    }
+    .contenedor-formulario{
+        display: block;
+        margin-top: 2rem;
+    }
+    .formulario-parrafo{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .logo-footer{
+        justify-items: center;
+    }
+    .about{
+        margin-top: 2rem;
+        display: block;
+        line-height: 1.8rem;
+    }
+    .contenedor-contacto{
+        display: block;
+    }
+    .footer{
+        object-fit: contain;
+        height: fit-content;
+    }
+    .footer-p{
+        margin-top: 2rem;
+    }
+    .footer-section{
+        display: block;
+        text-align: center;
+        padding: 0;
+        line-height: 1.5rem;
+    }
+    .div-footer{
+        text-align: center;
+        color: var(--blanco);
+        font-weight: 700;
+        margin: 2rem 0;
+    }
+    .div2-footer{
+        color: var(--blanco);
+        padding: .5rem;
+        margin: 2rem 0;
+        text-align: center;
+    }
+}
